@@ -16,7 +16,8 @@
 		CB90875F17BBDEDC00BE2A69 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CB90875E17BBDEDC00BE2A69 /* Default.png */; };
 		CB90876117BBDEDC00BE2A69 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB90876017BBDEDC00BE2A69 /* Default@2x.png */; };
 		CB90876317BBDEDC00BE2A69 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB90876217BBDEDC00BE2A69 /* Default-568h@2x.png */; };
-		CB90876C17BBDF5200BE2A69 /* JSIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB90876B17BBDF5200BE2A69 /* JSIAPManager.m */; };
+		CB90876F17BBDFD100BE2A69 /* JSIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB90876E17BBDFD100BE2A69 /* JSIAPManager.m */; };
+		CB90877117BBE00F00BE2A69 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB90877017BBE00F00BE2A69 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +34,9 @@
 		CB90875E17BBDEDC00BE2A69 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CB90876017BBDEDC00BE2A69 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CB90876217BBDEDC00BE2A69 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CB90876A17BBDF5200BE2A69 /* JSIAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSIAPManager.h; sourceTree = "<group>"; };
-		CB90876B17BBDF5200BE2A69 /* JSIAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSIAPManager.m; sourceTree = "<group>"; };
+		CB90876D17BBDFD100BE2A69 /* JSIAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSIAPManager.h; sourceTree = "<group>"; };
+		CB90876E17BBDFD100BE2A69 /* JSIAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSIAPManager.m; sourceTree = "<group>"; };
+		CB90877017BBE00F00BE2A69 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB90877117BBE00F00BE2A69 /* StoreKit.framework in Frameworks */,
 				CB90874D17BBDEDC00BE2A69 /* UIKit.framework in Frameworks */,
 				CB90874F17BBDEDC00BE2A69 /* Foundation.framework in Frameworks */,
 				CB90875117BBDEDC00BE2A69 /* CoreGraphics.framework in Frameworks */,
@@ -71,6 +74,7 @@
 		CB90874B17BBDEDC00BE2A69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB90877017BBE00F00BE2A69 /* StoreKit.framework */,
 				CB90874C17BBDEDC00BE2A69 /* UIKit.framework */,
 				CB90874E17BBDEDC00BE2A69 /* Foundation.framework */,
 				CB90875017BBDEDC00BE2A69 /* CoreGraphics.framework */,
@@ -106,8 +110,8 @@
 		CB90876917BBDF4400BE2A69 /* IAP Manager */ = {
 			isa = PBXGroup;
 			children = (
-				CB90876A17BBDF5200BE2A69 /* JSIAPManager.h */,
-				CB90876B17BBDF5200BE2A69 /* JSIAPManager.m */,
+				CB90876D17BBDFD100BE2A69 /* JSIAPManager.h */,
+				CB90876E17BBDFD100BE2A69 /* JSIAPManager.m */,
 			);
 			path = "IAP Manager";
 			sourceTree = "<group>";
@@ -180,7 +184,7 @@
 			files = (
 				CB90875917BBDEDC00BE2A69 /* main.m in Sources */,
 				CB90875D17BBDEDC00BE2A69 /* JSAppDelegate.m in Sources */,
-				CB90876C17BBDF5200BE2A69 /* JSIAPManager.m in Sources */,
+				CB90876F17BBDFD100BE2A69 /* JSIAPManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +299,7 @@
 				CB90876817BBDEDC00BE2A69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
